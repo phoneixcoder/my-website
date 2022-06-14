@@ -10,10 +10,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/my-website" element={<Layout />}>
+        
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/my-website/about" element={<About />} />
-          <Route path="/my-website/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          
         </Route>
       </Routes>
       <Particle/>
